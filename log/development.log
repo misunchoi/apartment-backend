@@ -2260,3 +2260,304 @@ Processing by ApartmentsController#index as */*
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms)
 
 
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT  "apartments".* FROM "apartments" LIMIT $1[0m  [["LIMIT", 11]]
+  [1m[35m (51.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (8535.7ms)[0m  [1m[35mDROP DATABASE IF EXISTS "apartment-backend_development"[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "ar_internal_metadata"."value" FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1[0m  [["key", "environment"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (312.3ms)[0m  [1m[35mDROP DATABASE IF EXISTS "apartment-backend_development"[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (185.4ms)[0m  [1m[35mDROP DATABASE IF EXISTS "apartment-backend_test"[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (831.8ms)[0m  [1m[35mCREATE DATABASE "apartment-backend_development" ENCODING = 'unicode'[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (647.0ms)[0m  [1m[35mCREATE DATABASE "apartment-backend_test" ENCODING = 'unicode'[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (44.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (40.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (15.0ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4838859294382010205)[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to DeviseCreateUsers (20181127184117)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (47.1ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127184117_devise_create_users.rb:5
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181127184117_devise_create_users.rb:39
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181127184117_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127184117"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to AddJtiMatcherToUsers (20181127194907)
+  [1m[35m (25.3ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mALTER TABLE "users" ADD "jti" character varying[0m
+  ↳ db/migrate/20181127194907_add_jti_matcher_to_users.rb:3
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_jti" ON "users"  ("jti")[0m
+  ↳ db/migrate/20181127194907_add_jti_matcher_to_users.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127194907"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateApartments (20181127230749)
+  [1m[35m (0.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (42.6ms)[0m  [1m[35mCREATE TABLE "apartments" ("id" bigserial primary key, "street1" character varying, "street2" character varying, "city" character varying, "postal_code" integer, "state" character varying, "country" character varying, "building_manager" character varying, "manager_phone" character varying, "manager_hours" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127230749_create_apartments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.3ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127230749"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to AddUserIdToApartments (20181129002726)
+  [1m[35m (39.6ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[35mALTER TABLE "apartments" ADD "user_id" bigint[0m
+  ↳ db/migrate/20181129002726_add_user_id_to_apartments.rb:3
+  [1m[35m (0.9ms)[0m  [1m[35mCREATE  INDEX  "index_apartments_on_user_id" ON "apartments"  ("user_id")[0m
+  ↳ db/migrate/20181129002726_add_user_id_to_apartments.rb:3
+  [1m[35m (34.2ms)[0m  [1m[35mALTER TABLE "apartments" ADD CONSTRAINT "fk_rails_ce3cb81433"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20181129002726_add_user_id_to_apartments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.6ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181129002726"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Create (0.4ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-11-29 21:38:35.785530"], ["updated_at", "2018-11-29 21:38:35.785530"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (40.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT pg_advisory_unlock(4838859294382010205)[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:38:59 -0800
+  [1m[35m (0.9ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rack-2.0.6/lib/rack/runtime.rb:22
+Processing by ApartmentsController#index as HTML
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 60ms (Views: 2.3ms | ActiveRecord: 2.0ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:39:04 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 2ms (Views: 0.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:39:13 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.4ms | ActiveRecord: 0.7ms)
+
+
+Started POST "/apartments" for 127.0.0.1 at 2018-11-29 13:40:10 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"user_id"=>"2", "street1"=>"1234 Sixth", "street2"=>"Unit 5", "city"=>"San Diego", "postal_code"=>"92111", "state"=>"CA", "country"=>"USA", "building_manager"=>"Matt", "manager_phone"=>"939-123-0987", "manager_hours"=>"0700-1500"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[35m (0.2ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/apartments_controller.rb:8
+Completed 200 OK in 146ms (Views: 0.7ms | ActiveRecord: 6.4ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:40:11 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (1.2ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.7ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:40:17 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:40:27 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (9.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 12ms (Views: 1.6ms | ActiveRecord: 9.9ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:40:30 -0800
+Processing by ApartmentsController#index as HTML
+  [1m[36mApartment Load (0.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:40:44 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (1.2ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.1ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:40:59 -0800
+Processing by ApartmentsController#index as HTML
+  [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 2ms (Views: 1.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:41:01 -0800
+Processing by ApartmentsController#index as HTML
+  [1m[36mApartment Load (0.3ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 1ms (Views: 1.0ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/apartments" for 127.0.0.1 at 2018-11-29 13:42:03 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"user_id"=>"2", "street1"=>"1234 Sixth", "street2"=>"Unit 5", "city"=>"San Diego", "postal_code"=>"92111", "state"=>"CA", "country"=>"United States", "building_manager"=>"Andy", "manager_phone"=>"9391230987", "manager_hours"=>"0800-1000"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 2], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[35m (0.1ms)[0m  [1m[31mROLLBACK[0m
+  ↳ app/controllers/apartments_controller.rb:8
+Completed 200 OK in 6ms (Views: 0.4ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:42:03 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (1.1ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.3ms | ActiveRecord: 1.1ms)
+
+
+Started POST "/users" for 127.0.0.1 at 2018-11-29 13:42:36 -0800
+Processing by Devise::RegistrationsController#create as JSON
+  Parameters: {"user"=>{"firstName"=>"julianne", "lastName"=>"peters", "email"=>"julianne.peters@gmail.com", "password"=>"[FILTERED]"}, "registration"=>{"user"=>{"firstName"=>"julianne", "lastName"=>"peters", "email"=>"julianne.peters@gmail.com", "password"=>"[FILTERED]"}}}
+Unpermitted parameters: :firstName, :lastName
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (0.4ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = $1 LIMIT $2[0m  [["email", "julianne.peters@gmail.com"], ["LIMIT", 1]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (15.9ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "created_at", "updated_at", "jti") VALUES ($1, $2, $3, $4, $5) RETURNING "id"[0m  [["email", "julianne.peters@gmail.com"], ["encrypted_password", "$2a$11$nHfWUxBj3aEAZgnqJcq/u.bZ8p0wfg.I.0Kn/L2T8Jv.PzkhKepHW"], ["created_at", "2018-11-29 21:42:36.856347"], ["updated_at", "2018-11-29 21:42:36.856347"], ["jti", "b40beb1f-7763-42ba-9667-b0efaf6fa185"]]
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (0.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+Completed 201 Created in 281ms (Views: 0.6ms | ActiveRecord: 16.9ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:42:36 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 3ms (Views: 1.8ms | ActiveRecord: 0.9ms)
+
+
+Started POST "/apartments" for 127.0.0.1 at 2018-11-29 13:42:53 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"user_id"=>"1", "street1"=>"1234 Sixth", "street2"=>"Unit 5", "city"=>"San Diego", "postal_code"=>"92111", "state"=>"CA", "country"=>"United States", "building_manager"=>"Andy", "manager_phone"=>"9391230987", "manager_hours"=>"1000-1900"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mApartment Create (1.3ms)[0m  [1m[32mINSERT INTO "apartments" ("street1", "street2", "city", "postal_code", "state", "country", "building_manager", "manager_phone", "manager_hours", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street1", "1234 Sixth"], ["street2", "Unit 5"], ["city", "San Diego"], ["postal_code", 92111], ["state", "CA"], ["country", "United States"], ["building_manager", "Andy"], ["manager_phone", "9391230987"], ["manager_hours", "1000-1900"], ["created_at", "2018-11-29 21:42:53.297576"], ["updated_at", "2018-11-29 21:42:53.297576"], ["user_id", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[35m (40.5ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:8
+Completed 200 OK in 86ms (Views: 0.7ms | ActiveRecord: 42.4ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:42:53 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 4ms (Views: 3.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:43:22 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (0.6ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 4ms (Views: 2.6ms | ActiveRecord: 0.6ms)
+
+
+Started POST "/apartments" for 127.0.0.1 at 2018-11-29 13:44:11 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"user_id"=>"1", "street1"=>"4567 J Street", "street2"=>"", "city"=>"San Diego", "postal_code"=>"92111", "state"=>"CA", "country"=>"USA", "building_manager"=>"Chelsea", "manager_phone"=>"925-555-1212", "manager_hours"=>"0000-2359"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mUser Load (0.5ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mApartment Create (1.9ms)[0m  [1m[32mINSERT INTO "apartments" ("street1", "street2", "city", "postal_code", "state", "country", "building_manager", "manager_phone", "manager_hours", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street1", "4567 J Street"], ["street2", ""], ["city", "San Diego"], ["postal_code", 92111], ["state", "CA"], ["country", "USA"], ["building_manager", "Chelsea"], ["manager_phone", "925-555-1212"], ["manager_hours", "0000-2359"], ["created_at", "2018-11-29 21:44:11.053157"], ["updated_at", "2018-11-29 21:44:11.053157"], ["user_id", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[35m (40.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:8
+Completed 200 OK in 51ms (Views: 1.0ms | ActiveRecord: 42.6ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:44:11 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (6.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 12ms (Views: 5.0ms | ActiveRecord: 6.4ms)
+
+
+Started POST "/apartments" for 127.0.0.1 at 2018-11-29 13:44:49 -0800
+Processing by ApartmentsController#create as JSON
+  Parameters: {"apartment"=>{"user_id"=>"1", "street1"=>"1555 Wellington Street", "street2"=>"", "city"=>"San Diego", "postal_code"=>"92111", "state"=>"CA", "country"=>"USA", "building_manager"=>"Andy", "manager_phone"=>"123-456-7890", "manager_hours"=>"0500-1400"}}
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = $1 LIMIT $2[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[36mApartment Create (1.0ms)[0m  [1m[32mINSERT INTO "apartments" ("street1", "street2", "city", "postal_code", "state", "country", "building_manager", "manager_phone", "manager_hours", "created_at", "updated_at", "user_id") VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12) RETURNING "id"[0m  [["street1", "1555 Wellington Street"], ["street2", ""], ["city", "San Diego"], ["postal_code", 92111], ["state", "CA"], ["country", "USA"], ["building_manager", "Andy"], ["manager_phone", "123-456-7890"], ["manager_hours", "0500-1400"], ["created_at", "2018-11-29 21:44:49.621106"], ["updated_at", "2018-11-29 21:44:49.621106"], ["user_id", 1]]
+  ↳ app/controllers/apartments_controller.rb:8
+  [1m[35m (40.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ app/controllers/apartments_controller.rb:8
+Completed 200 OK in 49ms (Views: 1.0ms | ActiveRecord: 41.7ms)
+
+
+Started GET "/apartments" for 127.0.0.1 at 2018-11-29 13:44:49 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (4.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 4.9ms)
+
+
