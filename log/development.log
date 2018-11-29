@@ -2260,3 +2260,10 @@ Processing by ApartmentsController#index as */*
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms)
 
 
+Started GET "/apartments" for 127.0.0.1 at 2018-11-28 17:01:25 -0800
+Processing by ApartmentsController#index as */*
+  [1m[36mApartment Load (4.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 4.5ms)
+
+
