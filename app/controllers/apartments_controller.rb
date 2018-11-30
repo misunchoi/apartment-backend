@@ -18,4 +18,10 @@ class ApartmentsController < ApplicationController
     render json: @apartment
   end
 
+  def usersapartments
+    @user = User.find(params[:user_id])
+    @userApartments = @user.apartments
+    render json: @userApartments
+  end
+
 end
