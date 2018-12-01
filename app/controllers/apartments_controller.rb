@@ -9,10 +9,6 @@ class ApartmentsController < ApplicationController
     render json: apartment
   end
 
-  def apartment_params
-    params.require(:apartment).permit(:user_id, :street1, :street2, :city, :postal_code, :state, :country, :building_manager, :manager_phone, :manager_hours)
-  end
-
   def show
     @apartment = Apartment.find(params[:id])
     render json: @apartment
@@ -24,4 +20,19 @@ class ApartmentsController < ApplicationController
     render json: @userApartments
   end
 
+  def destroy
+    @apartment = Apartment.find(params[:id])
+    @apartment.destroy
+  end
+
+  def update
+    id = apartment_params[:id]
+
+    Apartment.update(id, apartment_params)
+  end
+
+private
+  def apartment_params
+    params.require(:apartment).permit(:user_id, :street1, :street2, :city, :postal_code, :state, :country, :building_manager, :manager_phone, :manager_hours, :id, :created_at, :updated_at)
+  end
 end
