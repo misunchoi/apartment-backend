@@ -45,4 +45,3 @@ end
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rspec-rails', groups: [:development, :test]
 gem 'devise-jwt', '~> 0.5.6'
-gem "bootsnap", require: false
