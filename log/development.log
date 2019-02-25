@@ -2260,7 +2260,6 @@ Processing by ApartmentsController#index as */*
 Completed 200 OK in 2ms (Views: 1.7ms | ActiveRecord: 0.5ms)
 
 
-<<<<<<< HEAD
   [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT  "apartments".* FROM "apartments" LIMIT $1[0m  [["LIMIT", 11]]
   [1m[35m (51.4ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
   ↳ /Users/learn/.rvm/gems/ruby-2.3.1/gems/rake-12.3.1/lib/rake/task.rb:271
@@ -2560,13 +2559,13 @@ Processing by ApartmentsController#index as */*
   [1m[36mApartment Load (4.9ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
   ↳ app/controllers/apartments_controller.rb:4
 Completed 200 OK in 9ms (Views: 3.7ms | ActiveRecord: 4.9ms)
-=======
+
 Started GET "/apartments" for 127.0.0.1 at 2018-11-28 17:01:25 -0800
 Processing by ApartmentsController#index as */*
   [1m[36mApartment Load (4.5ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
   ↳ app/controllers/apartments_controller.rb:4
 Completed 200 OK in 7ms (Views: 1.7ms | ActiveRecord: 4.5ms)
->>>>>>> 9200285c9efb1884307205ac671b4259bdc46ffc
+
 
 
 Started GET "/users/1/apartments" for 127.0.0.1 at 2018-11-30 11:54:34 -0800
@@ -3118,7 +3117,7 @@ Processing by ApartmentsController#destroy as */*
 Processing by ApartmentsController#destroy as */*
   Parameters: {"_json"=>[{"id"=>3, "street1"=>"1555 Wellington Street", "street2"=>"", "city"=>"San Diego", "postal_code"=>92111, "state"=>"CA", "country"=>"USA", "building_manager"=>"Andy", "manager_phone"=>"123-456-7890", "manager_hours"=>"0500-1400", "created_at"=>"2018-11-29T21:44:49.621Z", "updated_at"=>"2018-11-29T21:44:49.621Z", "user_id"=>1}, {"id"=>2, "street1"=>"4567 J Street", "street2"=>"", "city"=>"San Diego", "postal_code"=>92111, "state"=>"CA", "country"=>"USA", "building_manager"=>"Chelsea", "manager_phone"=>"925-555-1212", "manager_hours"=>"0000-2359", "created_at"=>"2018-11-29T21:44:11.053Z", "updated_at"=>"2018-11-29T21:44:11.053Z", "user_id"=>1}, {"id"=>1, "street1"=>"1234 Sixth", "street2"=>"Unit 5", "city"=>"San Diego", "postal_code"=>92111, "state"=>"CA", "country"=>"United States", "building_manager"=>"Andy", "manager_phone"=>"9391230987", "manager_hours"=>"1000-1900", "created_at"=>"2018-11-29T21:42:53.297Z", "updated_at"=>"2018-11-29T21:42:53.297Z", "user_id"=>1}], "id"=>"[object Object],[object Object],[object Object]", "apartment"=>{}}
 NoMethodError (undefined method `destroy' for nil:NilClass):
-  
+
 Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 
 
@@ -3908,7 +3907,6 @@ NoMethodError (undefined method `destroy' for nil:NilClass):
   
   
 NoMethodError (undefined method `destroy' for nil:NilClass):
-  
 app/controllers/apartments_controller.rb:28:in `destroy'
 NoMethodError (undefined method `destroy' for nil:NilClass):
   
@@ -5249,7 +5247,7 @@ Completed 500 Internal Server Error in 2ms (ActiveRecord: 0.0ms)
 Processing by ApartmentsController#destroy as */*
   
 Started DELETE "/apartments/[object%20Object],[object%20Object],[object%20Object]" for 127.0.0.1 at 2018-11-30 12:52:06 -0800
-  
+ 
 Started DELETE "/apartments/[object%20Object],[object%20Object],[object%20Object]" for 127.0.0.1 at 2018-11-30 12:52:06 -0800
   Parameters: {"_json"=>[{"id"=>3, "street1"=>"1555 Wellington Street", "street2"=>"", "city"=>"San Diego", "postal_code"=>92111, "state"=>"CA", "country"=>"USA", "building_manager"=>"Andy", "manager_phone"=>"123-456-7890", "manager_hours"=>"0500-1400", "created_at"=>"2018-11-29T21:44:49.621Z", "updated_at"=>"2018-11-29T21:44:49.621Z", "user_id"=>1}, {"id"=>2, "street1"=>"4567 J Street", "street2"=>"", "city"=>"San Diego", "postal_code"=>92111, "state"=>"CA", "country"=>"USA", "building_manager"=>"Chelsea", "manager_phone"=>"925-555-1212", "manager_hours"=>"0000-2359", "created_at"=>"2018-11-29T21:44:11.053Z", "updated_at"=>"2018-11-29T21:44:11.053Z", "user_id"=>1}, {"id"=>1, "street1"=>"1234 Sixth", "street2"=>"Unit 5", "city"=>"San Diego", "postal_code"=>92111, "state"=>"CA", "country"=>"United States", "building_manager"=>"Andy", "manager_phone"=>"9391230987", "manager_hours"=>"1000-1900", "created_at"=>"2018-11-29T21:42:53.297Z", "updated_at"=>"2018-11-29T21:42:53.297Z", "user_id"=>1}], "id"=>"[object Object],[object Object],[object Object]", "apartment"=>{}}
 app/controllers/apartments_controller.rb:28:in `destroy'
@@ -6062,7 +6060,6 @@ Processing by ApartmentsController#show as */*
   [1m[36mApartment Load (1.3ms)[0m  [1m[34mSELECT  "apartments".* FROM "apartments" WHERE "apartments"."id" = $1 LIMIT $2[0m  [["id", 7], ["LIMIT", 1]]
   ↳ app/controllers/apartments_controller.rb:17
 Completed 200 OK in 3ms (Views: 0.9ms | ActiveRecord: 1.3ms)
-
 
 Started GET "/apartments/7" for 127.0.0.1 at 2018-11-30 14:09:52 -0800
 Processing by ApartmentsController#show as */*
@@ -7233,11 +7230,55 @@ actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
 railties (5.2.1) lib/rails/engine.rb:524:in `call'
+=======
+Started GET "/" for 127.0.0.1 at 2018-12-03 16:36:37 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "apartment-backend_development" does not exist
+):
+  
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+
 puma (3.12.0) lib/puma/configuration.rb:225:in `call'
 puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
 Started GET "/users/1/apartments" for 127.0.0.1 at 2018-11-30 14:52:00 -0800
 Processing by ApartmentsController#usersapartments as */*
   Parameters: {"user_id"=>"1"}
@@ -7269,11 +7310,55 @@ actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
 railties (5.2.1) lib/rails/engine.rb:524:in `call'
+=======
+Started GET "/users" for 127.0.0.1 at 2018-12-03 16:36:45 -0800
+  
+ActiveRecord::NoDatabaseError (FATAL:  database "apartment-backend_development" does not exist
+):
+  
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:688:in `rescue in connect'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:684:in `connect'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:215:in `initialize'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `new'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/postgresql_adapter.rb:40:in `postgresql_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:809:in `new_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:853:in `checkout_new_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:832:in `try_to_checkout_new_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:793:in `acquire_connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:521:in `checkout'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:380:in `connection'
+activerecord (5.2.1.1) lib/active_record/connection_adapters/abstract/connection_pool.rb:1008:in `retrieve_connection'
+activerecord (5.2.1.1) lib/active_record/connection_handling.rb:118:in `retrieve_connection'
+activerecord (5.2.1.1) lib/active_record/connection_handling.rb:90:in `connection'
+activerecord (5.2.1.1) lib/active_record/migration.rb:554:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/callbacks.rb:28:in `block in call'
+activesupport (5.2.1.1) lib/active_support/callbacks.rb:98:in `run_callbacks'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/callbacks.rb:26:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:61:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+
 puma (3.12.0) lib/puma/configuration.rb:225:in `call'
 puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
 Started GET "/apartments/7" for 127.0.0.1 at 2018-11-30 14:52:53 -0800
 Processing by ApartmentsController#show as HTML
   Parameters: {"id"=>"7"}
@@ -7953,11 +8038,126 @@ actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
 rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
 rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
 railties (5.2.1) lib/rails/engine.rb:524:in `call'
+=======
+  [1m[35m (533.6ms)[0m  [1m[35mCREATE DATABASE "apartment-backend_development" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (475.6ms)[0m  [1m[35mCREATE DATABASE "apartment-backend_test" ENCODING = 'unicode'[0m
+  ↳ bin/rails:9
+  [1m[35m (22.6ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" character varying NOT NULL PRIMARY KEY)[0m
+  ↳ bin/rails:9
+  [1m[35m (19.6ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" character varying NOT NULL PRIMARY KEY, "value" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.4ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4838859294382010205)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Migrating to DeviseCreateUsers (20181127184117)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.8ms)[0m  [1m[35mCREATE TABLE "users" ("id" bigserial primary key, "email" character varying DEFAULT '' NOT NULL, "encrypted_password" character varying DEFAULT '' NOT NULL, "reset_password_token" character varying, "reset_password_sent_at" timestamp, "remember_created_at" timestamp, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127184117_devise_create_users.rb:5
+  [1m[35m (6.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_email" ON "users"  ("email")[0m
+  ↳ db/migrate/20181127184117_devise_create_users.rb:39
+  [1m[35m (1.7ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_reset_password_token" ON "users"  ("reset_password_token")[0m
+  ↳ db/migrate/20181127184117_devise_create_users.rb:40
+  [1m[36mActiveRecord::SchemaMigration Create (0.9ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127184117"]]
+  ↳ bin/rails:9
+  [1m[35m (1.2ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddJtiMatcherToUsers (20181127194907)
+  [1m[35m (6.4ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.9ms)[0m  [1m[35mALTER TABLE "users" ADD "jti" character varying[0m
+  ↳ db/migrate/20181127194907_add_jti_matcher_to_users.rb:3
+  [1m[35m (6.6ms)[0m  [1m[35mCREATE UNIQUE INDEX  "index_users_on_jti" ON "users"  ("jti")[0m
+  ↳ db/migrate/20181127194907_add_jti_matcher_to_users.rb:4
+  [1m[36mActiveRecord::SchemaMigration Create (0.7ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127194907"]]
+  ↳ bin/rails:9
+  [1m[35m (6.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to CreateApartments (20181127230749)
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (14.3ms)[0m  [1m[35mCREATE TABLE "apartments" ("id" bigserial primary key, "street1" character varying, "street2" character varying, "city" character varying, "postal_code" integer, "state" character varying, "country" character varying, "building_manager" character varying, "manager_phone" character varying, "manager_hours" character varying, "created_at" timestamp NOT NULL, "updated_at" timestamp NOT NULL)[0m
+  ↳ db/migrate/20181127230749_create_apartments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181127230749"]]
+  ↳ bin/rails:9
+  [1m[35m (5.6ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+Migrating to AddUserIdToApartments (20181129002726)
+  [1m[35m (6.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "apartments" ADD "user_id" bigint[0m
+  ↳ db/migrate/20181129002726_add_user_id_to_apartments.rb:3
+  [1m[35m (6.4ms)[0m  [1m[35mCREATE  INDEX  "index_apartments_on_user_id" ON "apartments"  ("user_id")[0m
+  ↳ db/migrate/20181129002726_add_user_id_to_apartments.rb:3
+  [1m[35m (2.0ms)[0m  [1m[35mALTER TABLE "apartments" ADD CONSTRAINT "fk_rails_ce3cb81433"
+FOREIGN KEY ("user_id")
+  REFERENCES "users" ("id")
+[0m
+  ↳ db/migrate/20181129002726_add_user_id_to_apartments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.4ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES ($1) RETURNING "version"[0m  [["version", "20181129002726"]]
+  ↳ bin/rails:9
+  [1m[35m (5.0ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.3ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Create (0.5ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES ($1, $2, $3, $4) RETURNING "key"[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-12-04 00:37:10.830532"], ["updated_at", "2018-12-04 00:37:10.830532"]]
+  ↳ bin/rails:9
+  [1m[35m (5.9ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (1.0ms)[0m  [1m[34mSELECT pg_advisory_unlock(4838859294382010205)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.3ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.5ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_try_advisory_lock(4838859294382010205)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+  [1m[36mActiveRecord::InternalMetadata Load (0.4ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = $1 LIMIT $2[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[35mBEGIN[0m
+  ↳ bin/rails:9
+  [1m[35m (0.1ms)[0m  [1m[35mCOMMIT[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT pg_advisory_unlock(4838859294382010205)[0m
+  ↳ bin/rails:9
+  [1m[35m (0.2ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ bin/rails:9
+Started GET "/users" for 127.0.0.1 at 2018-12-03 16:37:27 -0800
+  [1m[35m (0.6ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/user/.rbenv/versions/2.3.1/lib/ruby/gems/2.3.0/gems/activerecord-5.2.1.1/lib/active_record/log_subscriber.rb:98
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+
 puma (3.12.0) lib/puma/configuration.rb:225:in `call'
 puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
 puma (3.12.0) lib/puma/server.rb:472:in `process_client'
 puma (3.12.0) lib/puma/server.rb:332:in `block in run'
 puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+
 Started GET "/apartments" for 127.0.0.1 at 2019-02-24 17:10:56 -0800
 Processing by ApartmentsController#index as HTML
   [1m[36mApartment Load (18.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
@@ -8096,5 +8296,38 @@ Processing by ApartmentsController#index as HTML
   [1m[36mApartment Load (0.4ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
   ↳ app/controllers/apartments_controller.rb:4
 Completed 200 OK in 2ms (Views: 1.2ms | ActiveRecord: 0.4ms)
+=======
+Started GET "/favicon.ico" for 127.0.0.1 at 2018-12-03 16:37:28 -0800
+  
+ActionController::RoutingError (No route matches [GET] "/favicon.ico"):
+  
+actionpack (5.2.1.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1.1) lib/rails/rack/logger.rb:26:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.6) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.6) lib/rack/sendfile.rb:111:in `call'
+rack-cors (1.0.2) lib/rack/cors.rb:97:in `call'
+railties (5.2.1.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/apartments" for 127.0.0.1 at 2018-12-03 16:37:32 -0800
+Processing by ApartmentsController#index as HTML
+  [1m[36mApartment Load (0.7ms)[0m  [1m[34mSELECT "apartments".* FROM "apartments"[0m
+  ↳ app/controllers/apartments_controller.rb:4
+Completed 200 OK in 13ms (Views: 2.3ms | ActiveRecord: 2.2ms)
+
 
 
