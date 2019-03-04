@@ -1,24 +1,10 @@
-# README
+# Apartment App Backend
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
+The Apartment App Frontend can be found here: https://github.com/misunchoi/apartment-frontend 
 
-Things you may want to cover:
+Users can do the following:
 
-* Ruby version
+* Login/Register
 
-* System dependencies
+* Create, edit, delete apartment information
 
-* Configuration
-
-* Database creation
-
-* Database initialization
-
-* How to run the test suite
-
-* Services (job queues, cache servers, search engines, etc.)
-
-* Deployment instructions
-
-* ...
